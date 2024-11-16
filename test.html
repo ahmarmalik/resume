@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <style>
+
+        :root{
+            --awesome-color:#ef4dd0;
+        }
+
+        body {
+            /* background-color: maroon; */
+        }
+        @media ( min-width:300px) and (max-width: 400px) {
+            body{
+                background-color: cadetblue;
+
+            }
+        }
+
+        @media (min-width: 0) and ( max-width:300px) {
+            body{
+                background-color: purple;
+
+            }
+        }
+
+        
+
+
+
+
+
+
+        .box{
+
+            background-color: darkolivegreen;
+            color: azure;
+            height: 150px;
+            width: 150px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+
+        ul li:last-child{
+            color: cadetblue;
+        }
+
+        ul li:nth-child(1){
+            color: tomato;
+        }
+
+        ul li:nth-child(3){
+            color:var(--awesome-color) ;
+        }
+
+        h2::first-letter {
+
+            color: orange;
+            font-size: 3rem;
+            font-family: cursive;
+
+
+        }
+        ::selection{
+            color: darkblue;
+            background-color:darkolivegreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Just for testing random things</h3>
+    <div class="box">BOX</div>
+
+
+
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+       
+    </ul>
+
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, consectetur?</h2>
+
+
+</body>
+</html>
